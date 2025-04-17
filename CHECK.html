@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial scale=1.0">
+	<title>portfolio</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+.service_section{
+margin-top:2%;
+	color:black;
+	font-size:50px;
+	padding-top:100px;
+	text-align:center;
+}
+.service_section span{
+color:green;
+}
+.card{
+	display:flex;
+	justify-content:space-around;
+	gap:20px;
+	text-align:center;
+	margin:100px;
+	color:black;
+}
+.service_card{
+	background-image:url('bog.webp');
+	padding:30px;
+	border-radius:20px;
+	transition:.5 ease;
+}
+.service_card:hover{
+	border:2px solid green;
+	background-color:green;
+	transform: translateY(-20px);
+
+}
+@media screen and (max-width:820px){
+.service_section{
+		font-size:20px;
+		margin-bottom:-40px;
+		}
+.card{
+		grid-template-columns:1fr;
+		flex-wrap:wrap;
+}
+.service_card{
+	margin-top:20px;
+
+
+}
+.service_card h2{
+	font-size:25px;
+}
+.service_card img{
+	width:150px;
+	height:120px;
+
+}	
+}
+.form h1{
+	margin:150px 0px 40px 0px;
+	text-align:center;
+	color:black;
+	font-size:50px;
+	padding-top:80px;
+
+}
+.form h1 span{
+	color:green;
+}
+.form input,textarea{
+	width:550px;
+	margin:10px 340px;
+	padding:15px;
+	background-color:rgb(63 63 63);
+	font-size:18px;
+	color:white;
+	border:none;
+	border-radius:5px;
+
+}
+.form .form_btn{
+	padding:15px 50px;
+	font-size:20px;	
+	background-color:green;
+	margin:1.5rem 33rem;
+	border-radius:5px;
+	box-shadow:0px 0px 20px;
+	cursor:pointer;
+	border:none;
+	justify-content:justify;
+	transition:.3s ease;
+}	
+.form .form_btn:hover{
+	background:transparent;
+	border:2px solid green;
+	color:white;
+}
+.footer{
+	margin-top:20px;
+	background-color:white;
+	color:black;
+	padding:30px;
+	font-size:10px;
+	text-align:center;
+}
+*::selection{
+	background-color:green;
+}
+@media screen and (max-width:820px){
+	.form h1{
+		font-size:35px;
+
+}
+.form input,textarea{
+	margin-left:50px;
+	width:450px;
+
+}
+.form .form_btn{
+	margin-left:14rem;
+	padding:10px 25px;
+	font-size:18px;
+	
+
+}
+
+}
+</style>
+</head>
+<body>
+<div class="box">
+<nav>
+	<input type="checkbox" class="checkbox" id="check">
+	<h1 class="nav_head">Fathima</h1>
+	<ul>
+		<li><a href="#home">HOME</a></li>
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#service">SERVICE</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+
+		<a href="#contact"><button class="contact_btn">Contact Me</button></a>
+
+	</ul>
+	<label for="check" class="checkbtn">
+	<i class="fas fa-bars"></i>
+
+</label>
+</nav>
+<section id="home" class="home">
+	<img src="photo.jpg" alt="" width="400px" height=300px">
+        <div class="intro">
+		<h1>Hi, I'm <br><span>Fathima</span></br></h1>
+		<h2>I'm a <span>Web Designer</span></h2>
+		<div class="font">
+		  <i class="fas fa-phone"></i>
+		  <i class="fas fa-envelope"></i>
+              
+</div>
+<button>Download CV</button>
+
+</section>
+<section>
+	<section id="about" class="about">
+	<div class="about_info">
+	<h1>A little bit <br>About <span>Me</br></span></h1>
+	<h2>Web Developer</h2>
+	<p>My name is Fathima. B Tech graduate in electronics and communication engineering, aiming to associate myself and contribute as a professional, with the organization and for the industrial development and provide greater scope to learn, improvise and implement.Also I have done an internship in front end and back end projects. Which includes html, css, javascript, php and mysql.I worked as a web designer for 3 years.where I have been to varius projects, worked independently as well as in groups.</p>
+	<button class="about_btn">Read More...</button>
+</div>
+	<div class="about_photo">
+		<img src="grl.png" alt="" width="420px" height="360px">
+</div></section>
+
+<section id="service">
+
+ <h1 class="service_section"><span>M</span>y <span>S</span>ervices<br><i class="fas fa-computer"></i></br></h1>
+
+<div class="card">
+	<div class="service_card">
+		
+		<img src="ui.jpg" alt="" height="150px" width="220px">
+		<h2>UI Design</h2>
+
+</div>
+	<div class="service_card">
+		<img src="uiux.png" alt="" height="150px" width="220px">
+		<h2>UI/UX Design</h2>
+
+</div>
+	<div class="service_card">
+		<img src="frnt.png" alt="" height="150px" width="220px">
+		<h2>Frontend <br>Developer</br></h2>
+
+</div>
+</div>
+</section>
+<section id="contact">
+	<div class="form">
+	<h1>Contact<span> Me</span></h1>
+	<form action="#home">
+	<input type="text" name="name" placeholder="Enter Your Name" required=""><br>
+	<input type="email" name="email" placeholder="Enter Your Email" required=""><br>
+	<input type="number" name="mno" placeholder="Enter Your phone No." required=""><br>
+	<textarea name="msg" id="msg" rows="6" cols="20" placeholder="Enter Your Message"></textarea><br><br>
+	<buttton class="form_btn">Submit</button>
+</form></div>
+</section>
+
+<div class="footer">
+	<p><i class="fa-solid fa-copyright">Fathima || all right reserved</i></p>
+
+
+
+
+</div>
+</body>
+<html>
+
+
+
+
+
+
+
+
+
+
