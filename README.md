@@ -1,2 +1,1 @@
-# FATHIMA-PORTFOLIO
-# PORTFOLIO-FATHIMA
+touch .nojekyll
